@@ -21,6 +21,7 @@ public class TestBase
 		FileInputStream fis=new FileInputStream("E:\\Automation\\NewPOM_Reg\\src\\test\\java\\com\\pom\\config\\config.properties");
 		prop.load(fis);
 		System.out.println("Open browser");
+		System.out.println("Open chrome browser");
 		if(prop.getProperty("browser").equalsIgnoreCase(browsernm))
 		{
 			System.setProperty("webdriver.chrome.driver", prop.getProperty("chrome_exe_path"));
